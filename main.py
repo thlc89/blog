@@ -80,7 +80,7 @@ class User(UserMixin, db.Model):
     # "comment_author" refers to the comment_author property in the Comment class.
     comments = relationship("Comment", back_populates="comment_author")
 
-# db.create_all()
+db.create_all()
 
 
 # TODO: sử dụng flask_login
